@@ -15,6 +15,7 @@ def rectangle(x, y):
   turtle.forward(x)
   turtle.left(90)
   turtle.forward(y)
+  turtle.penup()
 def window(x, y):
   turtle.goto(x, y)
   turtle.pendown()
@@ -54,6 +55,7 @@ turtle.right(90)
 turtle.forward(200)
 turtle.right(90)
 turtle.end_fill()
+turtle.penup()
 #___________________________________________________________________
 turtle.fillcolor('gray')
 turtle.begin_fill()
@@ -68,7 +70,7 @@ turtle.left(45)
 turtle.forward(50)
 turtle.end_fill()
 turtle.right(135)
-
+turtle.penup()
 # turtle.begin_fill()
 # turtle.left(45)
 # turtle.forward(50)
@@ -141,6 +143,7 @@ turtle.left(90)
 turtle.forward(30)
 turtle.penup()
 turtle.end_fill()
+turtle.penup()
 #___________________________________________________________________
 # Bottomleft window
 window(10, -190)
@@ -231,6 +234,7 @@ window(130, -130)
 # rectangle(10, 20)
 # rectangle(10, 20)
 # turtle.penup()
+#___________________________________________________________________
 # Midleft window
 window(10, -130)
 # turtle.goto(10, -130)
@@ -255,3 +259,9 @@ window(10, -130)
 # turtle.penup()
 #___________________________________________________________________
 # Road
+turtle.penup()
+turtle.goto(-1000, -1000)
+turtle.fillcolor('dark gray')
+turtle.begin_fill()
+rectangle(2000, 800)
+turtle.end_fill()
